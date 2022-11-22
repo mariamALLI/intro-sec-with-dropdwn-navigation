@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/3100053750.js" crossorigin="anonymous"></script>
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body>
+
+  <header>
+    <div id="navbar">
+     
+      <div class="logo">
+        <img class="img_logo" src="images/logo.svg" alt="logo pic">
+      </div>
+      
+      <div class="navlinks" >
+        <i class="fa-solid fa-bars" id="open_menu"></i>
+          <div class="nav_list" id="sidemenu">
+            <div id="navflex">
+               <ul class="primary" >
+                  <li><a href="#">Features</a>
+                    <div class="arrowicon1 active1"  role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="dropdown_menu"></div>
+                      <ul class="dropdown_menu" data-visible="false"  id="features">
+                    
+                        <img class="todoIcon" src="images/icon-todo.svg" alt="Todo icon">
+                        <li><a class="dropdown-item" href="#">Todo list</a></li>
+                        <img class="calIcon" src="images/icon-calendar.svg" alt="Calender icon">
+                        <li><a class="dropdown-item" href="#">Calender</a></li>
+                        <img class="remIcon" src="images/icon-reminders.svg" alt="Reminder icon">
+                        <li><a class="dropdown-item" href="#">Reminder</a></li>
+                        <img class="planIcon" src="images/icon-planning.svg" alt="Planning icon">
+                        <li><a class="dropdown-item" href="#">Planning</a></li>
+
+                      </ul>
+                  </li>
+
+
+                  <li><a href="#">Company</a>
+                    <div class="arrowicon2" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="dropdown-menu"></div>
+                    <ul class="dropdown-menu" data-visible="false" id="company">
+                      <li><a class="dropdown-item" href="#">History</a></li>
+                      <li><a class="dropdown-item" href="#">Our Team</a></li>
+                      <li><a class="dropdown-item" href="#">Blog</a></li>
+                    </ul>
+                  </li>
+
+
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">About</a></li>
+               </ul>
+           
+  
+                <div class="secondary">
+                  <ul class="log_reg">
+                    <li><a href="#">Login</a></li>
+                    <li><a class="reg_btn" href="#">Register</a></li>
+
+                  </ul>
+                  <i class="fa-solid fa-xmark" id="close_menu" onclick="closeMenu()"></i>
+                </div>
+              </div>   
+            </div>  
+      </div>
+     
+    </div>
+
+
+    <div id="hero">
+      <div class="hero_left">
+        <img class="left_img" src="images/image-hero-desktop.png" alt="desktop image">
+      </div>
+      <div class="hero_right">
+        <h1 class="right_heading">
+          Make</br> remote work
+        </h1>
+        <p class="right_p">
+          
+        Get your team in sync, no matter your location.</br> Streamline processes, 
+      create team rituals, and</br>  watch productivity soar.
+        </p>
+
+        <div class="learn-btn">
+            <a class="btn" href="#">Learn more</a>
+        </div>
+
+        <div class="sponsor">
+          <img class="icons" src="images/client-databiz.svg" alt="Databiz">
+          <img class="icons" src="images/client-audiophile.svg" alt="Audiophile">
+          <img class="icons" src="images/client-meet.svg" alt="Client meet">
+          <img class="icons" src="images/client-maker.svg" alt="Client maker">
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- Features
+  Company
+  Careers
+  About
+
+  Login
+  Register
+
+  Make remote work
+
+  Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.
+
+  Learn more
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 600;
+}
+
+/*-------------------- Navbar section---------------------- */
+
+#navbar {
+    padding: 1rem 2.5rem;
+    position: relative;
+    
+}
+
+.img_logo {
+    position: absolute;
+    top: 34px;
+    left: 90px;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+#navflex {
+    display: flex;
+    margin-right: 37rem;
+}
+
+.primary {
+    display: flex;  
+}
+
+
+
+.log_reg {
+   display: flex;
+    position: relative;
+    left: 610px;
+}
+
+.reg_btn {
+    border: 2px solid hsl(0, 0%, 41%);
+    border-radius: 15px;
+    background-color: transparent;
+    padding: 10px 22px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-weight: 600;
+}
+
+a:hover {
+    color: #000;
+    cursor: pointer;
+
+}
+
+ .arrowicon1 {
+    background-image: url(images/icon-arrow-down.svg);
+    background-repeat: no-repeat;
+    padding: 3px 5px;
+    position: absolute;
+    top: 43px;
+    left: 19.5rem;
+    cursor: pointer;
+}
+
+
+.arrowicon2 {
+    background-image: url(images/icon-arrow-down.svg);
+    background-repeat: no-repeat;
+    padding: 3px 5px;
+    position: absolute;
+    top: 43px;
+    left: 26rem;
+    cursor: pointer;
+}
+
+.dropdown_menu {
+    position: absolute;
+    top: 71px;
+    left: 9.5rem;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px 30px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    transition: bottom 0.5s; 
+}
+
+
+.dropdown-menu {
+    position: absolute;
+    top: 77px;
+    left: 23.5rem;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px 18px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    transition: 0.5ms;
+    
+}
+
+.dropdown_menu[data-visible="true"]{
+    transform: translate(0%);
+    display: block;
+    overflow: hidden;
+}
+
+.dropdown-menu[data-visible="true"]{
+    transform: translate(0%);
+    display: block;
+    overflow: hidden;
+}
+
+
+.dropdown_menu, .dropdown-menu{
+    display: none;
+    overflow: auto;
+    z-index: 1;
+}
+
+.todoIcon {
+    position: absolute;
+    left: 1rem;
+    top: 2.4rem;
+}
+
+.calIcon {
+    position: absolute;
+    left: 1rem;
+    top: 4.7rem;
+}
+
+.remIcon {
+    position: absolute;
+    left: 1rem;
+    top: 7rem;
+}
+
+.planIcon {
+    position: absolute;
+    left: 1rem;
+    /* top: 9.3rem; */
+}
+
+
+
+.secondary .fa-solid {
+    display: none;
+}
+
+#open_menu {
+    display: none;
+}
+
+/* -------------The Hero Section------------------- */
+#hero {
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5rem;
+}
+
+.left_img {
+    width: 75%;
+}
+
+.hero_left {
+    flex-basis: 40%;
+}
+
+.hero_right {
+    flex-basis: 45%;
+    margin-left: 2.5rem;
+}
+
+.right_heading{
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 11rem;
+}
+
+.right_p {
+    color: hsl(0, 0%, 41%);
+    line-height: 1.5;
+    word-spacing: 2px;
+    margin-top: 2rem;
+}
+
+.learn-btn {
+    margin-top: 2.5rem;
+}
+
+.btn {
+    margin-top: 2rem;
+    border: 2px solid #000;
+    padding: 12px 18px;
+    border-radius: 16px;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    text-decoration: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: hsl(0, 0%, 8%);
+}
+
+.sponsor {
+    margin-top: 9rem;
+    margin-bottom: 2.5rem;
+}
+
+.icons {
+    width: 86px;
+    margin-left: 10px;
+    margin-right: 6px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+           }
+
+.attribution a { 
+   color: hsl(228, 45%, 44%); 
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    /*------------Navbar Section----------*/
+    .nav_list {
+        background-color: hsl(0, 0%, 98%);
+        position: fixed;
+        top: 0;
+        right: -240px;
+        width: 240px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+
+    }
+
+    a {
+        font-weight: 500;
+    }
+
+    .img_logo {
+        margin-left: -4.5rem;
+    }
+
+    #navflex {
+        display: block;
+    }
+
+    .primary {
+        display: inline-block;
+        /* margin-left: -196px; */
+    }
+
+  
+
+    .log_reg {
+        display: block;
+        margin-top: 4rem;
+        margin-left: -33.5rem;
+    }
+
+    .dropdown_menu {
+        position: relative;
+        top: 0;
+        left: 18px;
+        border: none;
+        border-radius: 0;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .dropdown-menu {
+        position: relative;
+        top: 0;
+        left: 2px;
+        border: none;
+        border-radius: 0;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .secondary .fa-solid {
+        display: block;
+        font-size: 1.8rem;
+        color: hsl(0, 0%, 41%);
+    }
+
+    #open_menu {
+        position: absolute;
+        top: 30px;
+        right: 24px;
+        font-size: 1.8rem;
+        display: block;
+    }
+
+    #close_menu {
+        position: absolute;
+        top: 11px;
+        right: 20px;
+    }
+
+    .reg_btn {
+        margin-top: 19.5rem;
+        margin-left: -4.5rem;
+        padding-left: 54px;
+        padding-right: 54px;
+    }
+
+    .arrowicon1 {
+        position: relative;
+        left: 5rem;
+        top: -0.8rem;
+    }
+
+    .arrowicon2 {
+        position: relative;
+        left: 5.2rem;
+        top: -0.8rem;
+    }
+
+    .todoIcon {
+        position: absolute;
+        left: 0rem;
+        top: 1.2rem;
+    }
+    
+    .calIcon {
+        position: absolute;
+        left: 0rem;
+        top: 3.4rem;
+    }
+    
+    .remIcon {
+        position: absolute;
+        left: 0rem;
+        top: 5.8rem;
+    }
+    
+    .planIcon {
+        position: absolute;
+        left: 0rem;
+        top: 8rem;
+    }
+
+
+
+    /*---------------Hero Section---------------*/
+    #hero {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
+    }
+
+   .hero_left {
+    background-image: url(images/image-hero-mobile.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 8.9rem 0;
+    width: 100%;
+    margin-top: 5rem;
+   }
+
+   .hero_right {
+    padding: 0px 1rem;
+    display: block;
+    margin: 0 auto;
+   }
+
+    .left_img {
+       display: none;
+    }
+
+    br {
+        display: none;
+    }
+
+    .right_heading{
+        font-size: 2.2rem;
+        padding: 0;
+        margin-top: 3rem;
+        font-weight: 900;
+    }
+    
+    .right_p {
+        margin-top: 1rem;
+    }
+    
+    .sponsor {
+        margin-top: 5rem;
+    }
+
+    .icons {
+        width: 66px;
+    }
+}
