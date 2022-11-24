@@ -12,7 +12,7 @@ body {
     font-weight: 600;
 }
 
-/*-------------------- Navbar section---------------------- */
+/*-------------------- Navbar Section Styling Desktop View---------------------- */
 
 #navbar {
     padding: 1rem 2.5rem;
@@ -46,8 +46,6 @@ li {
     display: flex;  
 }
 
-
-
 .log_reg {
    display: flex;
     position: relative;
@@ -58,8 +56,7 @@ li {
     border: 2px solid hsl(0, 0%, 41%);
     border-radius: 15px;
     background-color: transparent;
-    padding: 10px 22px;
-    
+    padding: 10px 22px;   
 }
 
 a {
@@ -71,7 +68,6 @@ a {
 a:hover {
     color: #000;
     cursor: pointer;
-
 }
 
  .arrowicon1 {
@@ -133,7 +129,6 @@ a:hover {
     overflow: hidden;
 }
 
-
 .dropdown_menu, .dropdown-menu{
     display: none;
     overflow: auto;
@@ -161,10 +156,7 @@ a:hover {
 .planIcon {
     position: absolute;
     left: 1rem;
-    /* top: 9.3rem; */
 }
-
-
 
 .secondary .fa-solid {
     display: none;
@@ -174,7 +166,7 @@ a:hover {
     display: none;
 }
 
-/* -------------The Hero Section------------------- */
+/* -------------Hero Section Styling Desktop View------------------- */
 #hero {
     background-color: hsl(0, 0%, 98%);
     display: flex;
@@ -243,17 +235,18 @@ a:hover {
 
 .attribution { 
     font-size: 11px; 
-    text-align: center; 
-           }
+    text-align: center;
+    margin-top: -55px;
+ }
 
 .attribution a { 
-   color: hsl(228, 45%, 44%); 
+   color: hsl(0, 0%, 41%); 
 }
 
 
 @media only screen and (max-width: 600px) {
 
-    /*------------Navbar Section----------*/
+    /*------------Navbar Section Styling----------*/
     .nav_list {
         background-color: hsl(0, 0%, 98%);
         position: fixed;
@@ -281,10 +274,7 @@ a:hover {
 
     .primary {
         display: inline-block;
-        /* margin-left: -196px; */
     }
-
-  
 
     .log_reg {
         display: block;
@@ -379,7 +369,7 @@ a:hover {
 
 
 
-    /*---------------Hero Section---------------*/
+    /*---------------Hero Section Styling---------------*/
     #hero {
         display: block;
         margin: 0 auto;
@@ -428,5 +418,9 @@ a:hover {
 
     .icons {
         width: 66px;
+    }
+
+    .attribution {
+        margin-top: 20px;
     }
 }

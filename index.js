@@ -1,18 +1,10 @@
+//------------Arrow Navigation Icon JS Functionality 
+
 const dropDown1 = document.querySelector(".dropdown_menu");
 const dropDown2 =  document.querySelector(".dropdown-menu");
 const arrowToggle1 = document.querySelector(".arrowicon1");
 const arrowToggle2 = document.querySelector(".arrowicon2");
 
-const sideMenu = document.querySelector('#sidemenu')
-const openMenu = document.getElementById("open_menu")
-
-openMenu.addEventListener('click', function(){
-    document.querySelector('#sidemenu').style.right = '0'
-    })
-
-function closeMenu(){
-    sideMenu.style.right = "-240px"
-}
 
 arrowToggle1.addEventListener('click', () => {
     const expand = dropDown1.getAttribute("data-visible");
@@ -38,3 +30,15 @@ arrowToggle2.addEventListener('click', () => {
     }
 })
 
+//--------------- Sidebar Menu JS Functionality---------------
+
+const sideMenu = document.querySelector('#sidemenu')
+const openMenu = document.getElementById("open_menu")
+
+openMenu.addEventListener('click', function(){
+    document.querySelector('#sidemenu').style.right = '0'
+    })
+
+function closeMenu(){
+    sideMenu.style.right = "-240px"
+}
