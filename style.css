@@ -17,13 +17,17 @@ body {
 #navbar {
     padding: 1rem 2.5rem;
     position: relative;
-    
+    width: 1200px;
+}
+
+.logo {
+    position: relative;
 }
 
 .img_logo {
     position: absolute;
-    top: 34px;
-    left: 90px;
+    top: 16px;
+    left: 40px;
 }
 
 .navlinks {
@@ -40,16 +44,18 @@ li {
 #navflex {
     display: flex;
     margin-right: 37rem;
+    /* position: relative; */
 }
 
 .primary {
-    display: flex;  
+    display: flex; 
+    position: absolute; 
 }
 
 .log_reg {
    display: flex;
     position: relative;
-    left: 610px;
+    left: 721px;
 }
 
 .reg_btn {
@@ -75,8 +81,8 @@ a:hover {
     background-repeat: no-repeat;
     padding: 3px 5px;
     position: absolute;
-    top: 43px;
-    left: 18.7rem;
+    top: 26px;
+    left: 6.7rem;
     cursor: pointer;
 }
 
@@ -86,15 +92,15 @@ a:hover {
     background-repeat: no-repeat;
     padding: 3px 5px;
     position: absolute;
-    top: 43px;
-    left: 25.5rem;
+    top: 26px;
+    left: 13.5rem;
     cursor: pointer;
 }
 
 .dropdown_menu {
     position: absolute;
     top: 71px;
-    left: 9.5rem;
+    left: -3.5rem;
     border: 2px solid #fff;
     border-radius: 10px;
     background-color: #fff;
@@ -107,7 +113,7 @@ a:hover {
 .dropdown-menu {
     position: absolute;
     top: 77px;
-    left: 23.5rem;
+    left: 5.5rem;
     border: 2px solid #fff;
     border-radius: 10px;
     background-color: #fff;
@@ -247,6 +253,9 @@ a:hover {
 @media only screen and (max-width: 600px) {
 
     /*------------Navbar Section Styling----------*/
+    #navbar {
+        width: auto;
+    }
     .nav_list {
         background-color: hsl(0, 0%, 98%);
         position: fixed;
@@ -274,12 +283,13 @@ a:hover {
 
     .primary {
         display: inline-block;
+        position: relative;
     }
 
     .log_reg {
         display: block;
         margin-top: 4rem;
-        margin-left: -33.5rem;
+        margin-left: -40.5rem;
     }
 
     .dropdown_menu {
